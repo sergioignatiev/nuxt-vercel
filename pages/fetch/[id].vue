@@ -11,15 +11,13 @@
 
 <script  setup>
 const  route = useRoute();
-const { data, pending, error, refresh } = await useFetch('https://fakestoreapi.com/products',{})
+const id=route.params.id
+const url='https://fakestoreapi.com/products/'
+const { data } = await useFetch(url)
 const product=computed(()=>{
- if(data.value) {return data.value.find(f=>f.id=route.params.id)}
-else{
-  return {title:"Возникли проблемы с интернетом",
-    description:'Попробуйте перезагрузить страницу',
-    image:"@/assets/images/error.jpg"
-  }
-}
+return data.value[id-1]
+
+
 }
 
 )
