@@ -57,4 +57,5 @@ const { data, pending, error, refresh } = await useFetch('https://fakestoreapi.c
 :hover.btn-link{
     background-color: rgb(2, 135, 106);
 }
+
 </style>
