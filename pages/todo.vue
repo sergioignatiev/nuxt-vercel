@@ -4,7 +4,8 @@
    <input placeholder="Добавить задачу" type="text" class="input" required v-model="todo">
 <button class="todo-submit">добавить</button>   
 </form>
-<div class="task-wrapper">
+
+<div class="task-wrapper" v-show="list">
    <div class="task" v-for="task in list" :key="task.id" v-show="task.isVisible">
     <h2 class="task-task">{{ task.task }}</h2>
 <button class="task-completed" @click="task.completed=true" v-show="task.completed==false">Завершить</button>
@@ -16,7 +17,10 @@
 </template>
 
 <script setup>
-const list=ref([{id:1,task:"Добавьте новую  задачу",completed:false,isVisible:true}])
+useHead({
+    title:"Todo"
+})
+const list=ref([])
 const todo=ref('')
 function addTodo(){
 list.value.push({id:list.value.length+1,task:todo.value,completed:false,isVisible:true})

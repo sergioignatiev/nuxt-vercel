@@ -17,6 +17,9 @@
 const { data, pending, error, refresh } = await useFetch('https://fakestoreapi.com/products',{
     
 })
+useHead({
+    title:'api'
+})
 </script>
 
 <style>

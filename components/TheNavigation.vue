@@ -29,4 +29,7 @@
 color:black;
  text-transform: uppercase
 }
+a.router-link-active {
+   opacity: 0.5;
+  }
 </style>
