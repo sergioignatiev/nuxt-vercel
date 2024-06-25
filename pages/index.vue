@@ -6,6 +6,7 @@
  <div class="card-info">
     <h1 class="card-title">Бунинь</h1>
  <h2 class="card-second-title">Иван Алексеевич</h2>
+   <h1>Develop branch is added</h1>
 <p class="card-p"> Бунин рано начал самостоятельную жизнь; в юношеские годы работал в газетах, канцеляриях, много странствовал. 
 </p>
     <p class="card-p">Первый стихотворный сборник вышел в свет в 1891 году в Орле.</p>
