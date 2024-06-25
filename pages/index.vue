@@ -1,6 +1,6 @@
 <template>
   <div class="container card">
-    <h1 class="card-title-mobile mobile">Бунин</h1>
+    <h1 class="card-title-mobile mobile">Бунинь</h1>
     <h2 class="card-second-title-mobile mobile">Иван Алексеевич</h2>
     <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Ivan_Bunin_%28sepia%29.jpg" alt="bunin" class="card-image">
  <div class="card-info">
